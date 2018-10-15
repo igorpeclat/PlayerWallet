@@ -5,6 +5,19 @@ Java 8+
 
 ## How-to Build
 
+### CREATE DATABASE
+```
+DROP DATABASE IF EXISTS player_wallet ;
+CREATE DATABASE playe_wallet;
+```
+
+### Config env vars
+```
+export DB_URL=jdbc:mysql://localhost:3306/player_wallet?useSSL=false
+export DB_USER={YOUR USER HERE}
+export DB_PASSWORD={YOUR PASSWORD HERE}
+```
+
 ### Initialize PlayerWallet
 ```mvn clean install -Dspring.profiles.active=dev```
 
