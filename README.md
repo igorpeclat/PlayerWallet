@@ -20,27 +20,27 @@ export DB_PASSWORD={YOUR PASSWORD HERE}
 
 ### Initialize PlayerWallet
 
-#### Local with H2 Database
+#### Mysql Database
 ```mvn clean install```
 
-#### Mysql Database
+#### Local with H2 Database
 ```mvn clean install -Dspring.profiles.active=dev```
 
 
 ## How-to Test
 
-#### Local with H2 Database
+#### Mysql Database
 ```mvn test```
 
-#### Mysql Database
+#### Local with H2 Database
 ```mvn test -Dspring.profiles.active=dev```
 
 ## How-to Run
 
-#### Local with H2 Database
+#### Mysql Database
 ```mvn spring-boot:run```
 
-#### Mysql Database
+#### Local with H2 Database
 ```mvn spring-boot:run -Dspring.profiles.active=dev```
 
 
