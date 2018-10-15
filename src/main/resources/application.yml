@@ -1,0 +1,25 @@
+
+# give the application a name
+server:
+  servlet:
+    context-path: /wallet
+spring:
+  application:
+    name: wallet
+  datasource:
+    url: ${DB_URL} 
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:  
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    flyway:  
+      url: ${DB_URL} 
+      user: ${DB_USER}
+      password: ${DB_PASSWORD}
+      validateOnMigrate: true
+      baselineOnMigrate: true
